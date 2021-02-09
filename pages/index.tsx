@@ -1,3 +1,10 @@
+import Timer from "../components/Timer";
+
 export default function Home() {
-  return <h1>Home</h1>
+  return (
+    <div className="main-container">
+      <h1>Pomodoro Timer</h1>
+      <Timer></Timer>
+    </div>
+  );
 }
