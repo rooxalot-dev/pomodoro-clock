@@ -12,3 +12,9 @@ export const Title = styled.h1`
     text-align: center;
     margin: 20px 0;
 `;
+
+export const Subtitle = styled.h2`
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+`;
