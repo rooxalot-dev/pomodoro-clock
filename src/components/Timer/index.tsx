@@ -1,12 +1,18 @@
 import { useState, useEffect, useCallback } from "react";
+
 import moment from 'moment';
+import useSound from 'use-sound';
 import { Container, Time, ToogleTimer } from "./styles";
+
+import alert1 from '../../../public/assets/sounds/alert1.wav';
 
 export default function Timer() {
     const [timerStarted, setTimerStarted] = useState(false);
     const [timerType, setTimerType] = useState(null);
     const [timer, setTimer] = useState('00:00');
     const [timerInterval, setTimerInterval] = useState(null);
+
+    const [playAlert] = useSound(alert1);
 
     // Atualiza o timer
     useEffect(() => {
@@ -21,6 +27,7 @@ export default function Timer() {
     useEffect(() => {
         if (timerInterval && timer === '00:00') {
             stopTimer();
+            playAlert();
         }  
     }, [timer, timerInterval]);
 
@@ -77,6 +84,7 @@ export default function Timer() {
         if (timerInterval) {
             clearInterval(timerInterval);
             setTimerInterval(null);
+            setTimerStarted(false);
         }
     };
 
@@ -86,6 +94,7 @@ export default function Timer() {
                 <li><button onClick={() => configTimer('pomodoro')}>Pomodoro</button></li>
                 <li><button onClick={() => configTimer('short-break')}>Pausa Curta</button></li>
                 <li><button onClick={() => configTimer('long-break')}>Pausa Longa</button></li>
+                {/* <li><button onClick={() => configTimer('teste')}>Teste</button></li> */}
             </ul>
             <Time>
                 {timer}
