@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import moment from 'moment';
+import { Container, Time, ToogleTimer } from "./styles";
 
 export default function Timer() {
     const [timerStarted, setTimerStarted] = useState(false);
@@ -62,7 +63,6 @@ export default function Timer() {
         }, 1000);
 
         setTimerInterval(interval);
-        console.log('interval', interval);
     };
 
     const toogleTimer = useCallback(() => {
@@ -81,25 +81,16 @@ export default function Timer() {
     };
 
     return (
-        <div>
+        <Container>
             <ul className="timer-type">
-                <li>
-                    <button onClick={() => configTimer('pomodoro')}>Pomodoro</button>
-                </li>
-                <li>
-                    <button onClick={() => configTimer('short-break')}>Pausa Curta</button>
-                </li>
-                <li>
-                    <button onClick={() => configTimer('long-break')}>Pausa Longa</button>
-                </li>
-                <li>
-                    <button onClick={() => configTimer('teste')}>Teste</button>
-                </li>
+                <li><button onClick={() => configTimer('pomodoro')}>Pomodoro</button></li>
+                <li><button onClick={() => configTimer('short-break')}>Pausa Curta</button></li>
+                <li><button onClick={() => configTimer('long-break')}>Pausa Longa</button></li>
             </ul>
-            <div className="time">
+            <Time>
                 {timer}
-            </div>
-            <button onClick={() => toogleTimer()}>{ timerStarted ? 'Parar' : 'Iniciar' }</button>
-        </div>
+            </Time>
+            <ToogleTimer onClick={() => toogleTimer()}>{ timerStarted ? 'Parar' : 'Iniciar' }</ToogleTimer>
+        </Container>
     );
 }
