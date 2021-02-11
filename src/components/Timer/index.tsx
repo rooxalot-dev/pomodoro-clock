@@ -137,11 +137,11 @@ export default function Timer() {
 						Pausa Longa
 					</button>
 				</li>
-				<li>
+				{/* <li>
 					<button className='teste' onClick={() => configTimer('teste')}>
 						Teste
 					</button>
-				</li>
+				</li> */}
 			</Options>
 
 			<Container>

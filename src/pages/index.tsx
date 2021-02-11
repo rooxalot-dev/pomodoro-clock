@@ -1,18 +1,7 @@
 import Timer from '../components/Timer'
-
 import { Container, Title, Subtitle, Article } from '../styles/index'
-import content from '../helpers/content.json'
 
 export default function Home() {
-	type Content = {
-		intro: string
-		about: string
-		whatFor: string
-		howTo: string
-	}
-
-	const jsonContent = content as Content
-
 	return (
 		<Container>
 			<Title>TimerPomodoro</Title>
