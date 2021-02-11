@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import { darken } from 'polished';
+import { createGlobalStyle } from 'styled-components'
+import { darken, lighten } from 'polished'
 
 export default createGlobalStyle`
     * {
@@ -15,27 +15,28 @@ export default createGlobalStyle`
     }
 
     button {
+			font-family: 'Montserrat', sans-serif;
         cursor: pointer;
         border: none;
-        background-color: ${props => props.theme.secondary};
+        background-color: ${(props) => lighten(0.1, props.theme.background)};
         color: #fff;
         padding: 10px;
-        transition: background 0.2s ease-in-out;
         border-radius: 4px;
+				transition: all 0.2s ease-in-out;
 
         &:hover {
-            background: ${props => darken(.1, props.theme.secondary)};
+					background-color: ${(props) => lighten(0.15, props.theme.background)};
         }
 
         &:active, &:focus {
-            background: ${props => darken(.1, props.theme.secondary)};
+					background-color: ${(props) => lighten(0.15, props.theme.background)};
         }
     }
 
     html,
     body {
-        background: ${props => props.theme.background};
-        color: ${props => props.theme.primary};
-        font-family: 'Roboto', sans-serif;
+			font-family: 'Montserrat', sans-serif;
+      background-color: ${(props) => props.theme.background};
+      color: ${(props) => props.theme.default};
     }
-`;
+`
