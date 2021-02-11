@@ -44,6 +44,16 @@ export default class MyDocument extends Document {
 						content='pomodoro, timer, relogio, cronometro, produtividade, 1980, metodologia, tomate'
 					/>
 					<meta name='robots' content='index, follow' />
+					{/*  Google Analytics  */}
+					<script src='/ga.js' async></script>
+					{/* End Google Analytics */}
+					{/* Global site tag (gtag.js) - Google Analytics */}
+					<script
+						async
+						src='https://www.googletagmanager.com/gtag/js?id=UA-189462956-1'
+					></script>
+					<script src='/tag.js' async></script>
+					{/* End Global site tag (gtag.js) - Google Analytics */}
 					<link rel='icon' type='image/png' href={favicon} />
 					<link rel='preconnect' href='https://fonts.gstatic.com' />
 					<link
