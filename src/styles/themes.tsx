@@ -1,18 +1,17 @@
 export interface Theme {
-    primary: string;
-    secondary: string;
-    background: string;
-    lightBackground: string;
-};
+	default: string
+	primary: string
+	secondary: string
+	background: string
+}
 
 const main: Theme = {
-    primary: '#FFF',
-    secondary: '#75CBB0',
-    background: '#FC5255',
-    lightBackground: '#fd9fa1',
-};
+	default: '#f7f7f7',
+	primary: '#09E689',
+	secondary: '#006837',
+	background: '#F85D5E',
+}
 
 export default {
-    main,
-};
-
+	main,
+}
