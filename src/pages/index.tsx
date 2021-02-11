@@ -41,68 +41,66 @@ export default function Home() {
 
 				<h3>Como aplicar o método pomodoro</h3>
 				<br />
-				<p>
-					<ol>
-						<li>Tenha em mãos um cronômetro e uma lista de tarefas.</li>
-						<li>
-							Defina o cronômetro para 25 minutos e concentre-se em uma única
-							tarefa até que ele toque.
-						</li>
-						<li>
-							Quando sua sessão terminar, marque um pomodoro na sua lista (um
-							tomatinho) e registre a tarefa que você completou.
-						</li>
-						<li>
-							Faça a pausa de cinco minutos, mesmo que você não tenha chegado a
-							cumprir a tarefa no período de 25 minutos.
-						</li>
-						<li>
-							Após registrar quatro pomodori, faça um intervalo mais longo e
-							restaurador, de 10 minutos
-						</li>
-						<li>
-							Durante as pausas, evite fazer grande esforço mental ou tarefas
-							complexas. Use seu tempo de descanso para ir ao banheiro, comer
-							alguma coisa, verificar as redes sociais, brincar com seu animal
-							de estimação ou simplesmente não fazer nada.
-						</li>
-						<li>
-							Dicas: tarefas mais curtas caminham juntas. Qualquer tarefa que
-							leve menos de um pomodoro deve ser combinada com outras tarefas
-							simples. Por exemplo, "escrever cheque de aluguel", "marcar
-							consulta com o veterinário" e "ler artigo no jornal" podem fazer
-							parte da mesma sessão de 25 minutos.
-						</li>
-						<li>
-							Tarefas mais complexas, que durem mais de 25 minutos, devem ser
-							divididas. Se, eventualmente, você passar o período de 25 minutos
-							em uma tarefa, aplique uma pausa mais longa para compensar. Por
-							exemplo, se você demorar meia hora para completar uma tarefa, faça
-							uma pausa de 10 minutos. O ideal é nunca ultrapassar o tempo
-							estabelecido, para não perder o controle da programação.
-						</li>
-						<li>
-							Evite interromper a atividade que você se dispôs a fazer durante
-							um pomodoro. Pode ser tentador parar sua atividade para atender o
-							telefone, verificar e-mails ou mensagens no WhatsApp, por exemplo,
-							mas tente anotar essas atividades para fazê-las depois. Para isso,
-							você pode utilizar papel e caneta, uma agenda ou um organizador de
-							tarefas digital.
-						</li>
-						<li>
-							No caso de uma interrupção inevitável, faça uma pausa de cinco
-							minutos e comece novamente. Cirillo recomenda que você acompanhe
-							as interrupções (internas ou externas) à medida que elas ocorrem e
-							reflita sobre como evitá-las na próxima sessão.
-						</li>
-						<li>
-							A regra se aplica mesmo se você terminar a tarefa antes de o
-							cronômetro desligar. Use o resto do seu tempo para aprender um
-							pouco mais sobre aquela tarefa, melhorar as habilidades ou o
-							escopo de conhecimento.
-						</li>
-					</ol>
-				</p>
+				<ol>
+					<li>Tenha em mãos um cronômetro e uma lista de tarefas.</li>
+					<li>
+						Defina o cronômetro para 25 minutos e concentre-se em uma única
+						tarefa até que ele toque.
+					</li>
+					<li>
+						Quando sua sessão terminar, marque um pomodoro na sua lista (um
+						tomatinho) e registre a tarefa que você completou.
+					</li>
+					<li>
+						Faça a pausa de cinco minutos, mesmo que você não tenha chegado a
+						cumprir a tarefa no período de 25 minutos.
+					</li>
+					<li>
+						Após registrar quatro pomodori, faça um intervalo mais longo e
+						restaurador, de 10 minutos
+					</li>
+					<li>
+						Durante as pausas, evite fazer grande esforço mental ou tarefas
+						complexas. Use seu tempo de descanso para ir ao banheiro, comer
+						alguma coisa, verificar as redes sociais, brincar com seu animal de
+						estimação ou simplesmente não fazer nada.
+					</li>
+					<li>
+						Dicas: tarefas mais curtas caminham juntas. Qualquer tarefa que leve
+						menos de um pomodoro deve ser combinada com outras tarefas simples.
+						Por exemplo, "escrever cheque de aluguel", "marcar consulta com o
+						veterinário" e "ler artigo no jornal" podem fazer parte da mesma
+						sessão de 25 minutos.
+					</li>
+					<li>
+						Tarefas mais complexas, que durem mais de 25 minutos, devem ser
+						divididas. Se, eventualmente, você passar o período de 25 minutos em
+						uma tarefa, aplique uma pausa mais longa para compensar. Por
+						exemplo, se você demorar meia hora para completar uma tarefa, faça
+						uma pausa de 10 minutos. O ideal é nunca ultrapassar o tempo
+						estabelecido, para não perder o controle da programação.
+					</li>
+					<li>
+						Evite interromper a atividade que você se dispôs a fazer durante um
+						pomodoro. Pode ser tentador parar sua atividade para atender o
+						telefone, verificar e-mails ou mensagens no WhatsApp, por exemplo,
+						mas tente anotar essas atividades para fazê-las depois. Para isso,
+						você pode utilizar papel e caneta, uma agenda ou um organizador de
+						tarefas digital.
+					</li>
+					<li>
+						No caso de uma interrupção inevitável, faça uma pausa de cinco
+						minutos e comece novamente. Cirillo recomenda que você acompanhe as
+						interrupções (internas ou externas) à medida que elas ocorrem e
+						reflita sobre como evitá-las na próxima sessão.
+					</li>
+					<li>
+						A regra se aplica mesmo se você terminar a tarefa antes de o
+						cronômetro desligar. Use o resto do seu tempo para aprender um pouco
+						mais sobre aquela tarefa, melhorar as habilidades ou o escopo de
+						conhecimento.
+					</li>
+				</ol>
 				<br />
 
 				<h3>Vantagens do método pomodoro</h3>

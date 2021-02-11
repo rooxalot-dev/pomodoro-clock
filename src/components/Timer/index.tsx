@@ -8,6 +8,7 @@ import { Container, Options, Time, ToogleTimer } from './styles'
 import alert1 from '../../../public/assets/sounds/alert1.wav'
 
 export default function Timer() {
+	const [title, setTitle] = useState('')
 	const [timerStarted, setTimerStarted] = useState(false)
 	const [timerType, setTimerType] = useState(null)
 	const [timer, setTimer] = useState('00:00')
@@ -16,8 +17,21 @@ export default function Timer() {
 
 	// Estado criado para atualizar o componente de relógio quando um novo timer for configurado
 	const [randomKey, setRandomKey] = useState(Math.random() * 1000)
-
 	const [playAlert] = useSound(alert1)
+
+	// CArrega o titulo da página no carregamento do componente
+	useEffect(() => {
+		setTitle(document.title)
+	}, [])
+
+	// Atualiza o titulo da página com o timer
+	useEffect(() => {
+		if (!timerStarted || timer === '00:00') {
+			document.title = `${title}`
+		} else {
+			document.title = `(${timer}) - ${title}`
+		}
+	}, [timerStarted, timer, title])
 
 	// Atualiza o timer
 	useEffect(() => {
@@ -75,8 +89,6 @@ export default function Timer() {
 		const diffDuration = moment(dateCountdown).diff(finalDateCountdown, 's')
 		setDuration(diffDuration)
 		setRandomKey(Math.random() * 1000)
-
-		console.log('duration', duration)
 	}
 
 	const updateTimer = (timerType) => {
