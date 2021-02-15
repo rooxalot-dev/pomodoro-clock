@@ -1,6 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
+import siteContent from '../content'
 import favicon from '../../public/favicon.png'
 
 export default class MyDocument extends Document {
@@ -35,14 +36,8 @@ export default class MyDocument extends Document {
 			<Html lang='pt'>
 				<Head>
 					<meta charSet='utf-8' />
-					<meta
-						name='description'
-						content='Separe suas tarefas do dia-a-dia com um timer personalizado com a metodologia Pomodoro. Comece agora a turbinar a sua produtividade com TimerPomodoro!'
-					/>
-					<meta
-						name='keywords'
-						content='pomodoro, timer, relogio, cronometro, produtividade, 1980, metodologia, tomate'
-					/>
+					<meta name='description' content={siteContent.description} />
+					<meta name='keywords' content={siteContent.metaContent} />
 					<meta name='robots' content='index, follow' />
 					{/*  Google Analytics  */}
 					<script src='/ga.js' async></script>
@@ -64,7 +59,7 @@ export default class MyDocument extends Document {
 						href='https://fonts.googleapis.com/css2?family=Pacifico&display=swap'
 						rel='stylesheet'
 					></link>
-					<title>TimerPomodoro - Turbine sua produtividade!</title>
+					<title>{siteContent.title}</title>
 				</Head>
 				<body>
 					<Main />

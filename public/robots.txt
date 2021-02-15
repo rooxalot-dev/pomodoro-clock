@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://timer-pomodoro.com.br
+
+# Sitemaps
+Sitemap: https://timer-pomodoro.com.br/sitemap.xml

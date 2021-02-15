@@ -18,18 +18,18 @@ export default createGlobalStyle`
 			font-family: 'Montserrat', sans-serif;
         cursor: pointer;
         border: none;
-        background-color: ${(props) => lighten(0.1, props.theme.background)};
+        background-color: ${(props) => darken(0.1, props.theme.background)};
         color: #fff;
         padding: 10px;
         border-radius: 4px;
 				transition: all 0.2s ease-in-out;
 
         &:hover {
-					background-color: ${(props) => lighten(0.15, props.theme.background)};
+					background-color: ${(props) => props.theme.background};
         }
 
         &:active, &:focus {
-					background-color: ${(props) => lighten(0.15, props.theme.background)};
+					background-color: ${(props) => props.theme.background};
         }
     }
 
