@@ -1,7 +1,7 @@
 interface SiteContent {
-	title: String
-	description: String
-	metaContent: String
+	title: string
+	description: string
+	metaContent: string
 }
 
 const siteContent: SiteContent = {
