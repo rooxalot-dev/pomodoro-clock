@@ -4,12 +4,14 @@ import { lighten, darken } from 'polished'
 export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
 	margin-top: 60px;
+	height: 650px;
 	padding: 35px;
-	border-radius: 45%;
-	background-color: ${(props) => darken(0.1, props.theme.background)};
-	box-shadow: 0px 0px 20px ${(props) => lighten(0.1, props.theme.primary)};
+	border-radius: 10px;
+	background-color: ${(props) => lighten(0.04, props.theme.background)};
+	box-shadow: 10px 10px 20px ${(props) => darken(0.1, props.theme.background)};
 `
 
 export const Options = styled.ul`
@@ -18,23 +20,18 @@ export const Options = styled.ul`
 	flex-wrap: wrap;
 	list-style: none;
 	text-align: center;
+	width: 100%;
+
+	@media (max-width: 640px) {
+		margin-top: 25px;
+		flex-direction: column;
+	}
 
 	li button {
 		margin-top: 10px;
 		font-size: 20px;
 		transition: transform 0.2s ease-in;
-
-		&.pomodoro {
-			background: ${(props) => lighten(0.1, props.theme.primary)};
-		}
-
-		&.short {
-			background: ${(props) => lighten(0.1, props.theme.secondary)};
-		}
-
-		&.long {
-			background: ${(props) => props.theme.secondary};
-		}
+		background: ${(props) => darken(0.1, props.theme.background)};
 
 		&.teste {
 			background: ${(props) => darken(0.1, props.theme.background)};
@@ -51,7 +48,7 @@ export const Time = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin: 25px 0;
-	font-size: 70px;
+	font-size: 50px;
 	color: ${(props) => props.theme.default};
 `
 
