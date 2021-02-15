@@ -22,6 +22,11 @@ export const Options = styled.ul`
 	text-align: center;
 	width: 100%;
 
+	@media (max-width: 640px) {
+		margin-top: 25px;
+		flex-direction: column;
+	}
+
 	li button {
 		margin-top: 10px;
 		font-size: 20px;
