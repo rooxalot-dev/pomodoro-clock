@@ -133,39 +133,50 @@ export default function Timer() {
 
 	return (
 		<>
-			<Options>
-				<li>
-					<button className='pomodoro' onClick={() => configTimer('pomodoro')}>
-						Pomodoro
-					</button>
-				</li>
-				<li>
-					<button className='short' onClick={() => configTimer('short-break')}>
-						Pausa Curta
-					</button>
-				</li>
-				<li>
-					<button className='long' onClick={() => configTimer('long-break')}>
-						Pausa Longa
-					</button>
-				</li>
-				{/* <li>
-					<button className='teste' onClick={() => configTimer('teste')}>
-						Teste
-					</button>
-				</li> */}
-			</Options>
-
 			<Container>
 				<CountdownCircleTimer
 					key={randomKey}
 					isPlaying={timerStarted}
 					duration={duration}
 					size={280}
-					colors={[['#00B689', 1]]}
+					strokeWidth={6}
+					colors={[
+						['#00D689', 0.33],
+						['#00C689', 0.33],
+						['#00A689', 0.33],
+					]}
 				>
 					<Time>{timer}</Time>
 				</CountdownCircleTimer>
+
+				<Options>
+					<li>
+						<button
+							className='pomodoro'
+							onClick={() => configTimer('pomodoro')}
+						>
+							Pomodoro
+						</button>
+					</li>
+					<li>
+						<button
+							className='short'
+							onClick={() => configTimer('short-break')}
+						>
+							Pausa Curta
+						</button>
+					</li>
+					<li>
+						<button className='long' onClick={() => configTimer('long-break')}>
+							Pausa Longa
+						</button>
+					</li>
+					{/* <li>
+					<button className='teste' onClick={() => configTimer('teste')}>
+						Teste
+					</button>
+				</li> */}
+				</Options>
 
 				<ToogleTimer onClick={() => toogleTimer()}>
 					{timerStarted ? 'Parar' : 'Iniciar'}
