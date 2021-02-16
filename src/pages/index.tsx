@@ -1,3 +1,4 @@
+import { ModalProvider } from '../hooks/modal'
 import Timer from '../components/Timer'
 import Header from '../components/Header'
 import {
@@ -6,12 +7,45 @@ import {
 	Subtitle,
 	Article,
 	ArticleSection,
+	SettingsContainer,
+	SettingsOption,
 } from '../styles/index'
+import Modal from '../components/Modal'
 
 export default function Home() {
 	return (
-		<>
+		<ModalProvider>
 			<Header />
+
+			<Modal HeaderContent={<div>Configurações</div>}>
+				<SettingsContainer>
+					<SettingsOption>
+						<label>Duração em min. de um pomodoro:</label>
+						<input type='number' />
+					</SettingsOption>
+					<SettingsOption>
+						<label>Duração em min. de uma pausa curta:</label>
+						<input type='number' />
+					</SettingsOption>
+					<SettingsOption>
+						<label>Duração em min. de uma pausa longa:</label>
+						<input type='number' />
+					</SettingsOption>
+					<SettingsOption>
+						Volume do alarme:
+						<select>
+							<option>Mudo</option>
+							<option>25%</option>
+							<option>50%</option>
+							<option>75%</option>
+							<option>100%</option>
+						</select>
+					</SettingsOption>
+
+					<hr />
+				</SettingsContainer>
+			</Modal>
+
 			<Container>
 				<Title>TimerPomodoro</Title>
 				<Subtitle>Turbine sua produtividade!</Subtitle>
@@ -148,6 +182,6 @@ export default function Home() {
 					<br />
 				</Article>
 			</Container>
-		</>
+		</ModalProvider>
 	)
 }

@@ -39,4 +39,22 @@ export default createGlobalStyle`
       background-color: ${(props) => props.theme.background};
       color: ${(props) => props.theme.default};
     }
+
+		::-webkit-scrollbar-track
+		{
+			-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+			background-color: ${(props) => props.theme.primary};
+		}
+
+		::-webkit-scrollbar
+		{
+			width: 10px;
+			background-color: ${(props) => props.theme.primary};
+		}
+
+		::-webkit-scrollbar-thumb
+		{
+			background-color: ${(props) => props.theme.background};
+			border: 1px solid #555555;
+		}
 `

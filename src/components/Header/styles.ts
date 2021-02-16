@@ -19,6 +19,12 @@ export const Container = styled.header`
 	}
 
 	.site-menu {
+		display: flex;
+		align-items: center;
 		margin-right: 20px;
+
+		span {
+			margin-left: 10px;
+		}
 	}
 `

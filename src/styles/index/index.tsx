@@ -11,6 +11,17 @@ export const Container = styled.div`
 	}
 `
 
+export const SettingsContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+`
+
+export const SettingsOption = styled.div`
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+`
+
 export const Article = styled.article`
 	margin-top: 28vh;
 
