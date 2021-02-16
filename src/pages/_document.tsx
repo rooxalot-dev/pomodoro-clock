@@ -39,6 +39,11 @@ export default class MyDocument extends Document {
 					<meta name='description' content={siteContent.description} />
 					<meta name='keywords' content={siteContent.metaContent} />
 					<meta name='robots' content='index, follow' />
+					<script
+						data-ad-client='ca-pub-2664290671903722'
+						async
+						src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+					></script>
 					{/*  Google Analytics  */}
 					<script src='/ga.js' async></script>
 					{/* End Google Analytics */}
